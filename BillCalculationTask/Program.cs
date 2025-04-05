@@ -20,6 +20,21 @@
             // 3: 6 people
             // Commit your changes and add screnshot evidence of your program running to the Readme
 
+            Console.WriteLine("Welcome to the theme psrk, how many people are visiting");
+            int people = Convert.ToInt32(Console.ReadLine());
+            Console.Clear();
+            int cost = 0;
+
+            for (int i = 1; i != people + 1; i++) 
+            {
+                cost += 15;
+            }
+
+            if (people > 5) 
+            {
+                cost -= 5;
+            }
+            Console.WriteLine($"There are {people} people and the total cost is £{cost}.");
         }
     }
 }
